@@ -90,7 +90,9 @@ let x = 5;
 let count = 10;
 let user_name = "Alice";
 let _unused = 42;      // подчёркивание: "знаю, что не использую"
-let MAX_SIZE = 100;    // для констант: SCREAMING_SNAKE_CASE
+
+// Для настоящих констант используй const, не let:
+const MAX_SIZE: i32 = 100;  // SCREAMING_SNAKE_CASE
 
 // Неправильно:
 let 1st = 10;          // нельзя начинать с цифры
