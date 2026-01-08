@@ -1,4 +1,4 @@
-# Что такое тип данных?
+# Что такое тип данных? (Data Type)
 
 [← Оглавление](README.md) | [Целые числа →](02-integers.md)
 
@@ -43,17 +43,20 @@
 ## Типы в Rust
 
 ```rust
-let age = 25;           // число (i32)
-let price = 19.99;      // дробное число (f64)
-let active = true;      // да/нет (bool)
-let letter = 'A';       // один символ (char)
-let name = "Иван";      // текст (&str)
+let age = 25;           // целое число (integer, i32)
+let price = 19.99;      // дробное (floating-point, f64)
+let active = true;      // логический (boolean, bool)
+let letter = 'A';       // символ (character, char)
+let name = "Иван";      // строка (string slice, &str)
 ```
 
-Rust сам определяет тип, но можно указать явно:
+Rust сам определяет тип — это называется **вывод типа** (англ. **type inference**).
+
+Но можно указать тип явно — это **аннотация типа** (англ. **type annotation**):
 
 ```rust
 let age: i32 = 25;      // явно указали тип i32
+//     ^^^^ — аннотация типа
 ```
 
 ---
